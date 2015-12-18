@@ -1,0 +1,27 @@
+# Cobbler server
+export cobbler_server=10.66.72.74
+export cobbler_passwd=redhat
+
+export PHYMACHINE=./phymachine.conf
+export TESTCASES=./testcase.conf
+
+# RHEVH password
+export RHEVHInitPasswd=redhat
+
+# RHEVH root password after install
+export RHEVHNewPasswd=qwerasdf1234
+
+# Necessary kernel patameter
+# Password:entryption ${RHEVHInitPasswd}:LSoVK5ZN44FAk
+export RHEVHKernelBasedArg="rootpw=LSoVK5ZN44FAk ssh_pwauth=1 firstboot"
+
+# Send email
+export MAILTO=cwu@redhat.com
+export MAILCC=rhevh-qe@redhat.com
+
+# Case log
+export TESTCASELOG=/tmp/auto_testcase
+
+# Control server
+export MasterServer=10.66.8.241
+export MasterSerPort=9999
